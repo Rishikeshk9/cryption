@@ -1,0 +1,303 @@
+.productsPageContainer {
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heading {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+  }
+  
+  .content {
+    padding: 0;
+    color: #a7a7a7;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .ProductImageContainer {
+    max-width: 100%;
+  }
+  
+  .content1 {
+    margin-top: 2rem;
+  }
+  .content2 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+    .gridContainer {
+	 position: relative;
+	 height: 100%;
+	 width: 100%;
+	 display: grid;
+	 grid-template-columns: repeat(7, 1fr);
+	 grid-template-rows: repeat(5, 1fr);
+	 grid-template-areas: 'box1 box2a box3 box3 box3 box3 box3' 'box1 . a1 a2 a3 a4 a5 ' 'box1 . box4 box5 box6 box7 box8' 'box1 . . a6 . a7 a8 ' 'box1 box2b box9 box9 box9 box9 box9';
+	 column-gap: 1%;
+}
+ .gridContainer .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	 flex-direction: column;
+	 grid-area: box1;
+	 background: linear-gradient(90deg, #2082e9,#9900FF);
+       background-size: 200% 200%;
+     animation: gradient 5s ease infinite;
+     border-radius: 50px;
+	 font-family: 'Montserrat', sans-serif;
+	 font-weight: 900;
+	 color: white;
+
+
+ 
+}
+ .gridContainer .box2a {
+	 grid-area: box2a;
+}
+ @media (max-width: 520px) {
+	 .gridContainer .box2a span {
+		 font-size: 2vw;
+	}
+}
+ .gridContainer .box2b {
+	 grid-area: box2b;
+}
+ @media (max-width: 520px) {
+	 .gridContainer .box2b span {
+		 font-size: 2vw;
+	}
+}
+ .gridContainer .box3 {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 grid-area: box3;
+	 background: linear-gradient(to right, #2082e9 2.1%, #90f 80.43%);
+	 font-family: 'Montserrat', sans-serif;
+	 font-weight: 900;
+	 color: white;
+	 border-radius: 25px;
+}
+ .gridContainer .a {
+	 height: 100%;
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 text-align: center;
+	 flex-direction: row;
+	 position: relative;
+}
+ .gridContainer .a span {
+	 position: absolute;
+	 left: 60%;
+}
+ @media (max-width: 520px) {
+	 .gridContainer .a span {
+		 font-size: 2vw;
+		 position: absolute;
+		 left: 60%;
+	}
+}
+ .gridContainer .a1 {
+	 grid-area: a1;
+}
+ .gridContainer .a2 {
+	 grid-area: a2;
+}
+ .gridContainer .a3 {
+	 grid-area: a3;
+}
+ .gridContainer .a4 {
+	 grid-area: a4;
+}
+ .gridContainer .a5 {
+	 grid-area: a5;
+}
+ .gridContainer .a6 {
+	 grid-area: a6;
+	 position: relative;
+}
+ .gridContainer .a6 span {
+	 position: absolute;
+}
+ .gridContainer .a6 .left {
+	 right: 70%;
+}
+ .gridContainer .a6 .right {
+	 left: 70%;
+}
+ @media (max-width: 520px) {
+	 .gridContainer .a6 span {
+		 font-size: 2vw;
+	}
+}
+ .gridContainer .a7 {
+	 grid-area: a7;
+	 position: relative;
+}
+ .gridContainer .a7 span {
+	 position: absolute;
+}
+ .gridContainer .a7 .left {
+	 right: 70%;
+}
+ .gridContainer .a7 .right {
+	 left: 70%;
+}
+ @media (max-width: 520px) {
+	 .gridContainer .a7 span {
+		 font-size: 1vw;
+		 top: 30%;
+	}
+	 .gridContainer .a7 .left {
+		 top: 40%;
+		 font-size: 0.5rem;
+	}
+}
+ .gridContainer .a8 {
+	 transform: rotateX(180deg);
+	 grid-area: a8;
+}
+ .gridContainer .normalBox {
+	 border: 1px solid white;
+	 background-color: #000063;
+	 border-radius: 10px;
+	 cursor: pointer;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ @media (max-width: 420px) {
+	 .gridContainer .normalBox {
+		 border-radius: 5px;
+	}
+}
+ .gridContainer .expandedBox {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 position: absolute;
+	 background-color: #000063;
+	 z-index: 1;
+	 border: 3px solid white;
+	 text-align: center;
+	 color: white;
+	 cursor: pointer;
+	 width: 100%;
+	 height: 110%;
+	 border-radius: 10px;
+}
+ .gridContainer .normalBox4 {
+	 grid-area: box4;
+}
+ .gridContainer .normalBox5 {
+	 grid-area: box5;
+}
+ .gridContainer .normalBox6 {
+	 grid-area: box6;
+}
+ .gridContainer .normalBox7 {
+	 grid-area: box7;
+}
+ .gridContainer .normalBox8 {
+	 grid-area: box8;
+}
+ .gridContainer .box9 {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 grid-area: box9;
+     background: linear-gradient(90deg, #2082e9,#9900FF);
+     background-size: 200% 200%;	 border-radius: 1%;
+	 font-family: 'Montserrat', sans-serif;
+	 font-weight: 600;
+	 color: white;
+ 
+     animation: gradient 5s ease infinite;
+     border-radius: 50px;
+}
+ .gridContainer .responsiveImages {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 75%;
+	 width: 75%;
+}
+
+.productsPageContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+}
+.content {
+    padding: 0;
+    color: #a7a7a7;
+    font-family: 'Montserrat', sans-serif;
+}
+.ProductImageContainer {
+    max-width: 100%;
+}
+.content1 {
+    margin-top: 2rem;
+}
+.content2 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+  
+
+.diagram-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: box3;
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #2082e9,#9900FF);
+      background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    border-radius: 50px;
+    color: #FFF;
+   
+  } 
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  .blck{
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.5s;
+    transition-property: all;
+    border-radius: 5px;
+    z-index: 999; 
+    position: relative;
+   
+  }
+  
+
+   

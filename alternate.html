@@ -1,0 +1,89 @@
+<html lang="en"><!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style-alt.css">
+
+<head>
+
+    </head>
+
+    <!-- in a wrapping section include different containers for each step of the flow: data sources, build, deploy -->
+<section class="container">
+
+    <!-- in the sources container show three cards, side by side, or one atop the other on smaller viewports -->
+    <div class="container__sources">
+  
+      <div class="sources--cms">
+        <h3>CMSs</h3>
+        <p>Contentful, Drupal, WordPress, etc.</p>
+      </div>
+  
+      <div class="sources--markdown">
+        <h3>Markdown</h3>
+        <p>Documentation, Posts, etc.</p>
+      </div>
+  
+      <div class="sources--data">
+        <h3>Data</h3>
+        <p>APIs, Databases, YAML, JSON, CSV, etc.</p>
+      </div>
+  
+    </div>
+  
+    <!-- include a simple line to divide the container, and animate it to show a connection between the different containers  -->
+    <svg viewbox="0 0 10 100">
+      <line x1="5" x2="5" y1="0" y2="100"/>
+    </svg>
+  
+  
+    <!-- in the build container show two cards, atop of one another and the first of one showing an SVG icon -->
+    <div class="container__build"> 
+      <div class="build--powered">
+        <img src="SVG/Asset 11.svg" alt="Kiwi standing on oval">
+      </div>
+
+      <div class="build--powered">
+        <img src="SVG/Asset 10.svg" alt="Kiwi standing on oval">
+      </div>
+
+      <div class="build--powered">
+        <img src="SVG/Asset 12.svg" alt="Kiwi standing on oval">
+      </div>
+
+      <div class="build--powered">
+        <img src="SVG/Asset 9.svg" alt="Kiwi standing on oval">
+      </div>
+  
+      <div class="build--stack">
+          HTML · CSS · React
+      </div>
+  
+    </div>
+  
+    <!-- repeat the svg line to connect the second and third containers as well -->
+    <svg viewbox="0 0 10 100">
+      <line x1="5" x2="5" y1="0" y2="100"/>
+    </svg>
+  
+    <!-- in the deploy container show simply text, without a wrapping card -->
+    <div class="container__deploy">
+      <h3>Static Web Host</h3>
+      <p>Amazon S3, Netlify, GitHub Pages, Surge.sh, Aerobatic, Now.sh, & many more.</p>
+    </div>
+  
+  </section>
