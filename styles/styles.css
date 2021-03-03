@@ -358,7 +358,7 @@ z-index:100;
       font-weight: bold;
       font-size: 22px;
       margin : 0px 10px;
-      color: rgba(255,255,255,.2)!important;
+      color: rgba(255,255,255,.9)!important;
     }
 
     .navbar-nav{
@@ -379,7 +379,7 @@ z-index:100;
  .nav-link {
   font-family: "wavehaus-semibold", sans-serif;
    
-  color: rgba(255,255,255,.2)!important;
+  color: rgba(255,255,255,.9)!important;
 }
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
