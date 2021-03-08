@@ -46,6 +46,8 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+
+-webkit-appearance: none;
   background-size: 200% auto;
   animation: textShine 5s ease-in-out infinite alternate-reverse;
 }
@@ -152,14 +154,10 @@ span {
   padding: 12px 25px;
    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   /* Our gradient */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--purple)),
-    to(var(--pink))
-  );
-  background: linear-gradient(45deg, var(--purple), var(--pink));
+   
+  background: linear-gradient(45deg, #7f00ff, #2082e9);
+
+-webkit-appearance: none;
 }
 .btn-primary::after {
   content: "";
