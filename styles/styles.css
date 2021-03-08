@@ -396,8 +396,6 @@ z-index:100;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     margin-right: 150px!important;
   }
-
-  
  }
 
 /* If the screen size is 600px wide or more, set the font-size of <div> to 30px */
