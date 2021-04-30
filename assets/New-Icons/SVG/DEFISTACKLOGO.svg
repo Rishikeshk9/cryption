@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="43px" viewBox="0 0 51 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard 2</title>
+    <defs>
+        <linearGradient x1="18.6999043%" y1="55.6678007%" x2="26.8432905%" y2="43.103206%" id="linearGradient-1">
+            <stop stop-color="#2082E9" offset="0%"></stop>
+            <stop stop-color="#336DEC" offset="11%"></stop>
+            <stop stop-color="#5F3EF4" offset="40%"></stop>
+            <stop stop-color="#7F1CFA" offset="65%"></stop>
+            <stop stop-color="#9208FE" offset="86%"></stop>
+            <stop stop-color="#9900FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.5001761%" y1="57.8103606%" x2="33.5849701%" y2="42.0733407%" id="linearGradient-2">
+            <stop stop-color="#2082E9" offset="0%"></stop>
+            <stop stop-color="#336DEC" offset="11%"></stop>
+            <stop stop-color="#5F3EF4" offset="40%"></stop>
+            <stop stop-color="#7F1CFA" offset="65%"></stop>
+            <stop stop-color="#9208FE" offset="86%"></stop>
+            <stop stop-color="#9900FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cryption-Network-Copy-6" transform="translate(-1399.000000, -476.000000)" fill-rule="nonzero">
+            <g id="Group-26" transform="translate(60.000000, 281.000000)">
+                <g id="Group-5" transform="translate(842.000000, 0.000000)">
+                    <g id="Group-11" transform="translate(33.000000, 76.000000)">
+                        <g id="Group-4-Copy-5" transform="translate(441.000000, 96.000000)">
+                            <g id="Artboard-2" transform="translate(23.000000, 23.000000)">
+                                <polygon id="Path" fill="url(#linearGradient-1)" points="10.1266263 43 0 25 40.8514197 25.0515727 51 43"></polygon>
+                                <polygon id="Path-Copy" fill="url(#linearGradient-2)" points="40.8734084 13 51 31 10.1494523 30.9485984 0 13"></polygon>
+                                <polygon id="Path" fill="url(#linearGradient-2)" points="40.8734084 0 51 18 10.1494523 17.9485984 0 0"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
