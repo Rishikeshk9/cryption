@@ -76,11 +76,34 @@ body {
   text-decoration: none;
 }
 
+
+.fade-in1 {
+  -webkit-animation: fadeInFromNone 1s ease-in-out;
+  -moz-animation: fadeInFromNone 1s ease-in-out;
+  -o-animation: fadeInFromNone 1s ease-in-out;
+  animation: fadeInFromNone 1s ease-in-out;
+}
+
+
+.fade-in15 {
+  -webkit-animation: fadeInFromNone 1.5s ease-in-out;
+  -moz-animation: fadeInFromNone 1.5s ease-in-out;
+  -o-animation: fadeInFromNone 1.5s ease-in-out;
+  animation: fadeInFromNone 1.5s ease-in-out;
+}
+
 .fade-in2 {
   -webkit-animation: fadeInFromNone 2s ease-in-out;
   -moz-animation: fadeInFromNone 2s ease-in-out;
   -o-animation: fadeInFromNone 2s ease-in-out;
   animation: fadeInFromNone 2s ease-in-out;
+}
+
+.fade-in25 {
+  -webkit-animation: fadeInFromNone 2.5s ease-in-out;
+  -moz-animation: fadeInFromNone 2.5s ease-in-out;
+  -o-animation: fadeInFromNone 2.5s ease-in-out;
+  animation: fadeInFromNone 2.5s ease-in-out;
 }
 
 .fade-in3 {
@@ -90,11 +113,25 @@ body {
   animation: fadeInFromNone 3s ease-in-out;
 }
 
+.fade-in35 {
+  -webkit-animation: fadeInFromNone 3.5s ease-in-out;
+  -moz-animation: fadeInFromNone 3.5s ease-in-out;
+  -o-animation: fadeInFromNone 3.5s ease-in-out;
+  animation: fadeInFromNone 3.5s ease-in-out;
+}
+
 .fade-in4 {
   -webkit-animation: fadeInFromNone 4s ease-in-out;
   -moz-animation: fadeInFromNone 4s ease-in-out;
   -o-animation: fadeInFromNone 4s ease-in-out;
   animation: fadeInFromNone 4s ease-in-out;
+}
+
+.fade-in45 {
+  -webkit-animation: fadeInFromNone 4.5s ease-in-out;
+  -moz-animation: fadeInFromNone 4.5s ease-in-out;
+  -o-animation: fadeInFromNone 4.5s ease-in-out;
+  animation: fadeInFromNone 4.5s ease-in-out;
 }
 
 .fade-in5 {
@@ -103,11 +140,26 @@ body {
   -o-animation: fadeInFromNone 5s ease-in-out;
   animation: fadeInFromNone 5s ease-in-out;
 }
+
+.fade-in55 {
+  -webkit-animation: fadeInFromNone 5.5s ease-in-out;
+  -moz-animation: fadeInFromNone 5.5s ease-in-out;
+  -o-animation: fadeInFromNone 5.5s ease-in-out;
+  animation: fadeInFromNone 5.5s ease-in-out;
+}
+
 .fade-in6 {
   -webkit-animation: fadeInFromNone 6s ease-in-out;
   -moz-animation: fadeInFromNone 6s ease-in-out;
   -o-animation: fadeInFromNone 6s ease-in-out;
   animation: fadeInFromNone 6s ease-in-out;
+}
+
+.fade-in65 {
+  -webkit-animation: fadeInFromNone 6.5s ease-in-out;
+  -moz-animation: fadeInFromNone 6.5s ease-in-out;
+  -o-animation: fadeInFromNone 6.5s ease-in-out;
+  animation: fadeInFromNone 6.5s ease-in-out;
 }
 .title {
   z-index: 10;
@@ -209,12 +261,51 @@ span {
   border: 1px solid #fff;
 }
 
+
 .btn-outline-primary:hover {
   padding: 12px 18px;
-   background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);
-  transform: scale(1.1);
-  border: 1px solid transparent;
-  filter: drop-shadow(0 0 0.45rem #9900ff);
+  color: white;
+  transform: scale(1.05);
+  background: transparent;
+  border: 1px solid #743ad5;
+  color: #fff;
+  
+  border-radius: 100rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 1px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(45deg, #9900ff, #2082e9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #000 inset;
+}
+
+.btn-outline-primary2 {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+
+  padding: 12px 18px;
+  color: white;
+  transform: scale(1.05);
+  background: transparent;
+  border: 1px solid #743ad5;
+  color: #743ad5;
+  
+  border-radius: 100rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 1px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(45deg, #9900ff, #2082e9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #000 inset;
+}
+
+
+
+.btn-outline-primary2:hover {
+  
+  padding: 12px 18px;
+   color: white;
+  border: 1px solid #fff;
 }
 
  
@@ -232,7 +323,7 @@ z-index:100;
   }
 
 .banner {
-  font-size:6vw;
+  font-size:5.5vw;
   white-space: nowrap;
 
 }
@@ -244,7 +335,9 @@ z-index:100;
    font-size: 1vw; 
 }
 
-
+.subtitle  {
+  font-size: 16px;   
+ }
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -274,10 +367,18 @@ z-index:100;
     white-space: nowrap;
      
    }
+   .subtitle  {
+    font-size: 15px;   
+   }
  }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { }
+@media (min-width: 768px) { 
+
+  .subtitle  {
+    font-size: 16px;   
+   }
+}
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
@@ -306,7 +407,9 @@ z-index:100;
     white-space: nowrap;
      
    }
-
+   .subtitle  {
+    font-size: 15px;   
+   }
    .navbar-nav{
     position: absolute; 
     top: 30px!important;
@@ -336,7 +439,7 @@ z-index:100;
     }
   
   .banner {
-     font-size:3vw;
+     font-size:3.4vw;
      white-space: nowrap;
 
    }
@@ -351,6 +454,9 @@ z-index:100;
     }
 
     
+   .subtitle  {
+    font-size: 18px;   
+   }
     .nav-link {
       font-family: "wavehaus-semibold", sans-serif;
       font-weight: bold;
@@ -399,9 +505,11 @@ z-index:100;
  }
 
 /* If the screen size is 600px wide or more, set the font-size of <div> to 30px */
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
  
- 
+  .subtitle  {
+    font-size:22px;   
+   }
 }
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
@@ -1405,6 +1513,7 @@ header {
   grid-template-areas: "box1 box2a box3 box3 box3 box3 box3" "box1 . a1 a2 a3 a4 a5 " "box1 . box4 box5 box6 box7 box8" "box1 . . a6 . a7 a8 " "box1 box2b box9 box9 box9 box9 box9";
   column-gap: 1%;
 }
+
 .gridContainer .box1 {
   display: flex;
   justify-content: center;
@@ -1742,4 +1851,16 @@ span {
 }
 .ldio-rpinwye8j0b div {
   box-sizing: content-box;
+}
+
+
+.investors-logo{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    transition: all 0.3s ease-in-out;
+}
+
+.investors-logo:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 }
