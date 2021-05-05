@@ -1855,9 +1855,7 @@ span {
 
 
 .investors-logo{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
 }
 
 .investors-logo:hover{
