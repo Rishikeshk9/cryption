@@ -148,6 +148,28 @@ left */
     h1 {
       font-size:24px;
     }
+
+    .circle  {
+      width: 800px;
+      height: 800px;
+      background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);  
+      position: absolute;
+      opacity: 0.5; 
+      left:    -10%;
+      top: 80%;   
+    
+    }
+    .circle2 {
+      width: 800px;
+      height: 800px;
+      background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);  
+      position: absolute;
+      opacity: 0.5; 
+      left:    -50%;
+      top: 80%;   border-radius: 50%;
+    
+    }
+
   }
 
 /*--------------------------------------------------------------
@@ -207,6 +229,13 @@ h2 {
   font-weight: 128;
   font-family: "wavehaus-semibold", "sans";
   text-decoration: bold;
+}
+
+.powered {
+  color: #444444;
+  font-weight: 100;
+  font-family: "wavehaus-regular", "sans";
+   
 }
 .services .service-box .read-more {
   display: inline-flex;

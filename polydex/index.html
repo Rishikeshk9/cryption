@@ -66,7 +66,7 @@
               <br>
               <br>
               <br>
-              <h2>powered by &nbsp;<img src="../assets/Logo/Crypiton Logo White-1.svg" height="50px" ></h2>
+              <h3 class="text-light powered">powered by &nbsp;<a href="https://cryption.network" class="magic-hover magic-hover__square" style="z-index: 111111111111;" target="_blank"><img style="z-index: 111111111111;" src="../assets/Logo/Crypiton Logo White-1.svg" height="50px" ></a></h3>
             </center>
           </div>
         </div>
@@ -104,7 +104,7 @@
           <h1><strong>Features</strong></h1>
           <br>
           <p></p>We are building a suite of user friendly crypto products for the normal retail investor who wants to
-          inves
+          invest
           </p> <br> <br>
         </center>
       </header>
@@ -355,10 +355,14 @@
       var scroll = $(window).scrollTop();
 
       console.log(scroll)
-      circle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.00005) + ")"
+      if(scroll<1080)
+      {
+
+        circle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.00005) + ")"
       triangle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0004) + ")"
       pentagon.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0001) + ")"
       pentagon2.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0002) + ")"
+      }
 
     });
 
