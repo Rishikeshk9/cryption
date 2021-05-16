@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "wavehaus-regular";
-  src: url("../../../assets/fonts/wavehaus/Wavehaus-66Book.otf");
+  src: url("../fonts/wavehaus/Wavehaus-66Book.otf");
 }
 
 @font-face {
   font-family: "wavehaus-bold";
-  src: url("../../../assets/fonts/wavehaus/Wavehaus-128Bold.otf");
+  src: url("../fonts/wavehaus/Wavehaus-128Bold.otf");
 }
 
 @font-face {
   font-family: "wavehaus-semibold";
-  src: url("../../../assets/fonts/wavehaus/Wavehaus-95SemiBold.otf");
+  src: url("../fonts/wavehaus/Wavehaus-95SemiBold.otf");
 }
 * {
   padding: 0;
@@ -24,62 +24,62 @@
 
 
 .box {
+  
   position: absolute;
   top: 270%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
   font-weight: bold;
-  color: #c8d6e5;
-  z-index: 1000;
+  color: #c8d6e5; 
 }
 
+/* topright */
 .circle {
-  width: 100px;
-  height: 100px;
-  background: -webkit-linear-gradient(45deg, #2082e9, #9900ff); 
-   
-  position: relative;
-  top: 270%;
-  left: 7%;
-  opacity: 0.5;
-}
-
-
-
-.circle2 {
-  width: 100px;
-  height: 100px;
-  background: -webkit-linear-gradient(45deg, #2082e9, #9900ff); 
-  border-radius: 50%;
-  position: relative;
+  width: 800px;
+  height: 800px;
+  background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);  
+  position: absolute;
   opacity: 0.5; 
-  left: 17%;
+  right:   -10%;
+  top: 80%;   
+}
+ 
+ /* topleft */
+.circle2 {
+  width: 800px;
+  height: 800px;
+  background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);  
+  position: absolute;
+  opacity: 0.5; 
+  left:    -10%;
+  top: 80%;   border-radius: 50%;
+
 }
 
-
-
+/* 
+left */
 .circle3 {
-  width: 100px;
-  height: 100px;
-  background: -webkit-linear-gradient(45deg, #2082e9, #9900ff); 
-  border-radius: 50%;
-  position: relative; 
-  top: 320%; 
-  opacity: 0.5;
-  left:   57%;
+  width: 800px;
+  height: 800px;
+  background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);  
+  position: absolute;
+  opacity: 0.5; 
+  left:   -10%;
+  top: 120%; 
 }
 
 
 
 .circle4 {
-  width: 100px;
-  height: 100px;
+  width: 800px;
+  height: 800px;
   background: -webkit-linear-gradient(45deg, #2082e9, #9900ff);  
-  opacity: 0.5;
-  position: relative;  
-  top: 290%;
-  left: 67%;
+  position: absolute;
+  opacity: 0.5; 
+  right:   -10%;
+  border-radius: 50%;
+  top: 150%; 
 }
 
 
@@ -190,10 +190,24 @@
 .services .service-box h3 {
   color: #444444;
   font-weight: 128;
-  font-family: "wavehaus", "sans";
+  font-family: "wavehaus-semibold", "sans";
   text-decoration: bold;
 }
 
+
+  h1 {
+  color: #444444;
+  font-weight: 128;
+  font-family: "wavehaus-bold", "sans";
+  text-decoration: bold;
+}
+
+h2 {
+  color: #444444;
+  font-weight: 128;
+  font-family: "wavehaus-semibold", "sans";
+  text-decoration: bold;
+}
 .services .service-box .read-more {
   display: inline-flex;
   align-items: center;

@@ -2,7 +2,7 @@ body #magicMouseCursor {
     position: fixed;
     width: 35px;
     height: 35px;
-    border: 1px solid #9900ff;
+    border: 1px solid #dfdfdf;
     border-radius: 50%;
     z-index: 9999;
     left: 0;
@@ -10,7 +10,9 @@ body #magicMouseCursor {
     transition: transform 0.07s, width 0.3s, height 0.3s;
     pointer-events: none; }
     body #magicMouseCursor.cursor-square {
-      border-radius: 0; }
+      border-radius: 0; 
+      border: 1px solid #9900ff;
+    }
   
   body #magicPointer {
     height: 5px;
@@ -23,7 +25,8 @@ body #magicMouseCursor {
     pointer-events: none;
     transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s; }
     body #magicPointer.is-hover {
-      background: red; }
+      background: red; 
+    }
     body #magicPointer.pointer-blur {
       height: 50px;
       width: 50px;
