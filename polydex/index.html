@@ -40,7 +40,7 @@
 
   <style>
   
-  </style>
+  </style><script>history.scrollRestoration = "manual"</script>
 </head>
 
 <body>
@@ -51,9 +51,9 @@
    
     <div class="container "  >
       <div class="row">
-        <div class="col-lg-12 mt-5">
+        <div class="col-lg-12 ">
           <div data-aos="zoom-out">
-            <center><img src="assets/img/logograd.svg" class="brand-logo"></center><br>
+            <center><img src="assets/img/logograd.svg" class="brand-logo"></center> 
             <center>
               <h1 class="text-light">Redefining your DEX experience</h1>
             </center>
@@ -61,12 +61,8 @@
               <h2>A completely gasless, instant, cross-chain AMM DEX with yield farming</h2>
             </center>
             <center>
-
-              <br>
-              <br>
-              <br>
-              <br>
-              <h3 class="text-light powered">powered by &nbsp;<a href="https://cryption.network" class="magic-hover magic-hover__square" style="z-index: 111111111111;" target="_blank"><img style="z-index: 111111111111;" src="../assets/Logo/Crypiton Logo White-1.svg" height="50px" ></a></h3>
+ 
+              <p class="text-light powered" style="opacity: 0.75;">powered by</p> &nbsp; <img style="opacity: 1;" style="z-index: 111111111111;" src="../assets/Logo/Crypiton Logo White-1.svg" height="50px" > 
             </center>
           </div>
         </div>
@@ -148,7 +144,7 @@
 
           </div>
         </div> 
-          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="400">
             <div class="service-box red">
               <div class="  bg-gradient-cryption mx-auto pt-4">
                 <img src="assets/img/completely-gaseless.png" width="50px;" style="margin-top: 10px;"/>
@@ -163,7 +159,7 @@
             </div>
           </div>
            
-          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="600">
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
               <div class="  bg-gradient-cryption mx-auto pt-4">
                 <img src="assets/img/elastic-farming.png" width="50px;"/>
@@ -274,6 +270,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
   <script>
+   $( document ).ready(function() {
     var background = {}
 
     background.initializr = function () {
@@ -343,29 +340,37 @@
       }
     }
     background.initializr()
-  </script>
-
-  <script>
+  
     let circle = document.querySelector(".circle")
-    let triangle = document.querySelector(".circle2")
-    let pentagon = document.querySelector(".circle3")
-    let pentagon2 = document.querySelector(".circle4")
-
+    let circle2 = document.querySelector(".circle2")
+    let circle3 = document.querySelector(".circle3")
+    let circle4 = document.querySelector(".circle4")
+    
+     var scroll = 0;
     $(window).scroll(function (e)  {
-      var scroll = $(window).scrollTop();
+      scroll = $(window).scrollTop();
 
-      console.log(scroll)
+      //console.log(scroll)
       if(scroll<1080)
       {
+        console.log(circle.style.transform);
+        
+        console.log(circle2.style.transform);
+        console.log(circle3.style.transform);
+        console.log(circle4.style.transform);
 
-        circle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.00005) + ")"
-      triangle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0004) + ")"
-      pentagon.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0001) + ")"
-      pentagon2.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0002) + ")"
+      circle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.00005) + ")"
+      circle2.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0004) + ")"
+      circle3.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0001) + ")"
+      circle4.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0002) + ")"
       }
 
     });
 
+    circle.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.00005) + ")"
+      circle2.style.transform = "rotate(" + (-1 * scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0004) + ")"
+      circle3.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0001) + ")"
+      circle4.style.transform = "rotate(" + (scroll * 0.1) + "deg)" + "scale(" + (scroll * 0.0002) + ")"
 
     $(".jumbotron").css({ height: $(window).height() + "px" });
 
@@ -382,6 +387,11 @@ options = {
   "outerHeight": 41
     };
     magicMouse(options);
+
+  });
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
   </script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

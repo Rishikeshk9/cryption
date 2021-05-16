@@ -42,7 +42,7 @@
   position: absolute;
   opacity: 0.5; 
   right:   -10%;
-  top: 80%;   
+  top: 80%;   filter: drop-shadow(0 0 1rem #9900ff);
 }
  
  /* topleft */
@@ -53,7 +53,7 @@
   position: absolute;
   opacity: 0.5; 
   left:    -10%;
-  top: 80%;   border-radius: 50%;
+  top: 80%;   border-radius: 50%;filter: drop-shadow(0 0 1rem #9900ff);
 
 }
 
@@ -66,7 +66,7 @@ left */
   position: absolute;
   opacity: 0.5; 
   left:   -10%;
-  top: 120%; 
+  top: 120%; filter: drop-shadow(0 0 1rem #9900ff);
 }
 
 
@@ -79,7 +79,7 @@ left */
   opacity: 0.5; 
   right:   -10%;
   border-radius: 50%;
-  top: 150%; 
+  top: 150%; filter: drop-shadow(0 0 1rem #9900ff);
 }
 
 
@@ -157,7 +157,7 @@ left */
       opacity: 0.5; 
       left:    -10%;
       top: 80%;   
-    
+      filter: drop-shadow(0 0 1rem #9900ff);
     }
     .circle2 {
       width: 800px;
@@ -167,7 +167,7 @@ left */
       opacity: 0.5; 
       left:    -50%;
       top: 80%;   border-radius: 50%;
-    
+      filter: drop-shadow(0 0 1rem #9900ff);
     }
 
   }
