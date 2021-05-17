@@ -562,15 +562,33 @@ h1, h2, h3, h4, h5, h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1366px) {
+  #hero { 
+    padding-top: 120px ;
+  }
+  #hero h1 {
+    font-size: 65px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+  #hero h2 {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  
+ }
+
+@media (max-width: 1366px) {
+  #hero { 
+    padding-top:60px;
   }
 }
 
 @media (max-width: 991px) {
   #hero {
-    padding-top: 80px;
+    padding-top:20px!important;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -592,8 +610,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
-}
-
+} 
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
