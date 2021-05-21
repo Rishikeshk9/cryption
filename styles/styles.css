@@ -323,7 +323,7 @@ z-index:100;
   }
 
 .banner {
-  font-size:5.5vw;
+  font-size:6vw;
   white-space: nowrap;
 
 }
@@ -374,7 +374,7 @@ z-index:100;
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-
+  
   .subtitle  {
     font-size: 16px;   
    }
