@@ -1855,12 +1855,51 @@ span {
 
 
 .investors-logo{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
 }
 
 .investors-logo:hover{
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+}
+
+
+.angels-logo{
+  transition: all 0.3s ease-in-out;
+  -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+border-radius: 50%; 
+width: 50%!important; 
+margin-left: 25%;
+}
+@media screen and (min-width: 600px) {
+   
+  .angels-logo{
+    transition: all 0.3s ease-in-out;
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  width: 100%!important; 
+  margin-left: 0%;
+  }
+  
+  }
+  
+.angels-logo:hover{
+filter: grayscale(0%);
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+filter: drop-shadow(0 0 1rem #9900ff);
+}
+
+
+.product-links{
+  color: #90f;
+}
+.product-links{
+  color: #90f;
 }
