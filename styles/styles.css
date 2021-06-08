@@ -235,29 +235,94 @@ span {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.btn:hover::after {
-  /* Changing blur effect */
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);
 
-  /* And change the style properties */
-  width: 100%;
-  bottom: -5px;
-  left: 0;
+
+.btn-uniswap { 
+  padding: 12px 25px;
+   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Our gradient */
+  font-family: "wavehaus-semibold", sans-serif;
+  /*background: linear-gradient(60deg,#FFf  50%,  #FFf );*/
+  background: transparent;
+  border: 1px solid #FF007A;
+
+color: #FF007A;
+-webkit-appearance: none; 
+-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+.btn-uniswap::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  left: 5%;
+  height: 110%;
+  opacity: 0.8;
+  border-radius: 50px;
+
+  /* Declaring our shadow color inherit from the parent (button) */
+  background: inherit;
+
+  /* Blurring the element for shadow effect */
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+
+  /* Transition for the magic */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-uniswap:hover { 
+  padding: 12px 25px;
+   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Our gradient */
+  font-family: "wavehaus-semibold", sans-serif;
+  background: linear-gradient(60deg,#FFf  70%,  #FF007A );
+color: #FF007A;
+-webkit-appearance: none;
+border: 1px solid #FF007A;
+} 
+
+
 .btn-primary:hover {
   transform: scale(1.1);
-
   filter: drop-shadow(0 0 0.45rem #9900ff);
+}
+
+
+.btn-dfyn {
+  padding: 12px 18px;
+   color: #e66465;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid #e66465;
+}
+
+
+.btn-dfyn:hover {
+  padding: 12px 18px;
+  color: white;
+  transform: scale(1.05);
+  background: transparent; 
+  background: linear-gradient(60deg, #9198e5 ,#e66465);
+  color: #fff;
+  
+  border-radius: 100rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); 
+  
+}
+.btn-dfyn:hover img {
+ 
+   fill: #fff;
+  
 }
 .btn-outline-primary {
   padding: 12px 18px;
    color: white;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-
   border: 1px solid #fff;
 }
 
