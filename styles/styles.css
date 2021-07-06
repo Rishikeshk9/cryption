@@ -202,14 +202,26 @@ span {
   --purple: #7f00ff;
   --pink: #2082e9;
 }
+.polydex-link{
+  background: linear-gradient(45deg, #7f00ff, #2082e9); 
+  font-family: "wavehaus-bold", sans-serif;
+
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+.polydex-link:hover {
+  background:   #fff;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 .btn-primary { 
   padding: 12px 25px;
-   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   /* Our gradient */
-   
-  background: linear-gradient(45deg, #7f00ff, #2082e9);
-
--webkit-appearance: none;
+  font-family: "wavehaus", sans-serif; 
+  background: linear-gradient(45deg, #7f00ff, #2082e9); 
+  -webkit-appearance: none;
 }
 .btn-primary::after {
   content: "";
@@ -565,7 +577,7 @@ z-index:100;
     font-family: "wavehaus-bold", sans-serif;
     font-weight: bolder;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-    margin-right: 150px!important;
+    margin-right: 250px!important;
   }
  }
 
