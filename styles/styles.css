@@ -205,8 +205,10 @@ span {
 .polydex-link{
   background: linear-gradient(45deg, #7f00ff, #2082e9); 
   font-family: "wavehaus-bold", sans-serif;
-
+  border: 1px solid #7f00ff;
+  border-radius: 0%;
 -webkit-text-fill-color: transparent;
+ 
 -webkit-background-clip: text;
 }
 .polydex-link:hover {
