@@ -411,9 +411,12 @@ z-index:100;
  }
 
 .banner3 {
-   font-size: 1vw; 
+   font-size: 3vw; 
+   color: #743ad5!important; 
 }
-
+.app-container:hover .app-photo{
+  filter: drop-shadow(0 0 0.5rem #743ad5);
+}
 .subtitle  {
   font-size: 16px;   
  }
